@@ -1,0 +1,18 @@
+rules:
+  never_discuss:
+    - competitors
+  always_cite_sources: false
+
+input_guardrails:
+  block_prompt_injection: true
+  block_jailbreak: true
+  block_pii: true
+  block_adult_content: true
+
+output_guardrails:
+  require_json: false
+  check_toxicity: true
+  check_topic_adherence: true
+  max_retries: 3
+
+fallback_message: "I'm unable to process this request due to safety or policy constraints. Please rephrase your question or contact support."
