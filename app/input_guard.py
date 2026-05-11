@@ -2,7 +2,7 @@ import re
 from app.policy import get_policy
 
 INJECTION_PATTERNS = [
-    r"ignore (all |previous |prior |above |your )?(instructions|rules|guidelines|prompt)",
+    r"ignore.{0,30}(instructions|rules|guidelines|prompt)",
     r"you are now",
     r"pretend (you are|to be)",
     r"act as (a|an|if)",
